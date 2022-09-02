@@ -19,6 +19,6 @@ Route::post('/logout', function () {
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', function () {
-        return '登入';
+        return view('home');
     });
 });
